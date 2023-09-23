@@ -52,29 +52,7 @@ int main() {
 }
 
 void mathematics() {
-  double a, b, x1, x2, y1, y2;
-
-  cout << "Пожалуйста, введите x1: ";
-  cin >> x1;
-
-  while (cin.fail()) {
-    cin.clear(); 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
-    cout << "Некорректный ввод! Повторите попытку заново!\n"
-         << "Пожалуйста, введите x1 : ";
-    cin >> x1;
-  }
-
-  cout << "Пожалуйста, введите y1: ";
-  cin >> y1;
-
-  while (cin.fail()) {
-    cin.clear();
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    cout << "Некорректный ввод! Повторите попытку заново!\n"
-         << "Пожалуйста, введите y1 : ";
-    cin >> y1;
-  }
+  double a, b, x2, y2;
 
   cout << "Пожалуйста, введите x2: ";
   cin >> x2;
